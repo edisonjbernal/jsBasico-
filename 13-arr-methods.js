@@ -23,6 +23,8 @@ console.log(articulosFiltrados);
 
  //   Metodo Map 
 
+/* Crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de los alementos */
+
 var nombreArticulos = articulos.map(function(articulo){
     return articulo.nombre  
 });
@@ -31,6 +33,8 @@ console.log(nombreArticulos);
 
  //   Metodo Find
  /* De igual forma, con este método se valida un true o false para encontrar un elemento y si está lo regresa y si no, no pasa nada */
+/* Crea un nuevo array con los elementos del array que se pasó com oparámetro y que cunplan con la condición definida. */
+/* Retorna el primer elemento de un array que cumple con una condición definida en un nuevo array */
 
 var encuentraArticulos = articulos.find(function(articulo){
     return articulo.nombre === 'laptop';
